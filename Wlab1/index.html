@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/styles/main_container_style.css">
+    <link rel="stylesheet" href="static/styles/container_style.css">
+    <link rel="stylesheet" href="static/styles/nav_style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a class="f1l" href="index.html"><img src="static/images/f1logo (1).png" alt="картолром"></a>
+        <a class="sb" href="index.html"><img src="static/images/shopping-basket.png" alt="картолром"></a>
+    </div>
+
+    <div class="main">
+        <div class="left">
+    
+        </div>
+    
+        <div class="container">
+            <div class="card">
+                <a href="#"><img src="static/images/singapur.jpg" alt="картолром"></a>
+                <div class="info">
+                    <a class="name_gr" href="#"><p>Гран-При Сингапура</p></a>
+                    <a class="price" href="#"><p>185.000 руб</p></a>
+                    <button>В корзину</button>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="static/images/usa.jpg" alt="картолром"></a>
+                <div class="info">
+                    <a class="name_gr" href="#"><p>Гран-При США</p></a>
+                    <a class="price" href="#"><p>113.500 руб</p></a>
+                    <button>В корзину</button>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="static/images/mexico.jpg" alt="картолром"></a>
+                <div class="info">
+                    <a class="name_gr" href="#"><p>Гран-При Мексики</p></a>
+                    <a class="price" href="#"><p>57.000 руб</p></a>
+                    <button>В корзину</button>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="static/images/brazilii.jpg" alt="картолром"></a>
+                <div class="info">
+                    <a class="name_gr" href="#"><p>Гран-При Бразилии</p></a>
+                    <a class="price" href="#"><p>45.000 руб</p></a>
+                    <button>В корзину</button>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="static/images/las_vegas.jpg" alt="картолром"></a>
+                <div class="info">
+                    <a class="name_gr" href="#"><p>Гран-При Лас-Вегаса</p></a>
+                    <a class="price" href="#"><p>95.000 руб</p></a>
+                    <button>В корзину</button>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="static/images/katar.jpg" alt="картолром"></a>
+                <div class="info">
+                    <a class="name_gr" href="#"><p>Гран-При Катара</p></a>
+                    <a class="price" href="#"><p>60.000 руб</p></a>
+                    <button>В корзину</button>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="static/images/abu-dabi.jpg" alt="картолром"></a>
+                <div class="info">
+                    <a class="name_gr" href="#"><p>Гран-При Абу-Даби</p></a>
+                    <a class="price" href="#"><p>85.000 руб</p></a>
+                    <button>В корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+    
+        </div>
+
+    <div class="cart-modal" id="cart-modal">
+    <div class="cart-overlay"></div>
+    <div class="cart-window">
+        <button class="close-cart">&times;</button>
+        <h2>Корзина</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">Итого: <span id="cart-sum">0 ₽</span></div>
+
+        <form id="order-form" class="order-form">
+        <h3>Оформление заказа</h3>
+        <input name="firstName" placeholder="Имя" required>
+        <input name="lastName" placeholder="Фамилия" required>
+        <input name="phone" placeholder="Телефон" required>
+        <textarea name="address" placeholder="Адрес доставки" rows="3" required></textarea>
+        <button type="submit">Создать заказ</button>
+        </form>
+    </div>
+</div>
+
+<script src="static/js/shop.js"></script>
+
+        
+    </div>
+</body>
+</html>

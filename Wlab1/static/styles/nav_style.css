@@ -1,0 +1,40 @@
+.navbar {
+    
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;            
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px; 
+}
+
+.navbar img {
+    display: block;
+    height: 40px;
+}
+
+.f1l {
+  grid-column: 3/4;  /* самая левая колонка */
+}
+
+.sb {
+  grid-column: 10/11; /* самая правая колонка */
+  justify-self: end;
+  right: 10px;
+}
+
+@media (max-width: 1312px) {
+    .f1l {
+    grid-column: 2/3;  /* самая левая колонка */
+    }
+
+    .sb {
+    grid-column: 11/12; /* самая правая колонка */
+    justify-self: end;    /* прижимаем к правому краю ячейки */
+    }
+    
+}
+

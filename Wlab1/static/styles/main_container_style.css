@@ -1,0 +1,35 @@
+
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 64px;
+}
+
+
+.left {
+    grid-column: 1/3;
+    background-color: #e9e9e9;
+}
+
+.container {
+    grid-column: 3/11;
+}
+
+.right {
+    grid-column: 11/13;
+    background-color: #e9e9e9;
+}
+
+
+@media (max-width: 1312px) {
+    .left,
+    .right {
+        display: none;
+    }
+
+    .container {
+    grid-column: 1 / -1;
+  }
+    
+}
